@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myprofile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8f69bac8eb.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    body{
+        font-family: 'poppins';
+       
+    }
+
+    .container-fluid{
+        
+        font-family: 'poppins';
+       
+    }
+
+    
+
+    .favicon-myprof i{
+        height:100px;
+        padding-top: 40px;
+        font-size: 30px;
+        color:#544a0c ;
+    }
+
+    #sp1{
+        color:#544a0c ;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px; 
+        letter-spacing: 0.4px;
+        margin-bottom:  140px;
+    }
+
+    #profileimg{
+        position: absolute;
+        left: 36.39%;
+        right: 36.3%;
+        top: 10.62%;
+        bottom: 77.08%;
+
+    }
+
+    #ico{
+        position: absolute;
+        left: 54.77%;
+        right: 37.04%;
+        top: 19.92%;
+        bottom: 76.35%;
+    }
+
+    .user-info h2{
+        position: absolute;
+        width: 102px;
+        height: 32px;
+        left: 138px;
+        top: 203px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 13px;
+        letter-spacing: 0.4px;
+        color: #544A0C;
+    }
+
+    .user-info h6{
+        position: absolute;
+        width: 153px;
+        height: 32px;
+        left: 128px;
+        top: 235px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 13px;
+        letter-spacing: 0.4px;
+        color: #B5977F;
+    }
+
+    hr{
+        position: absolute;
+        width: 305.06px;
+        height: 0px;
+        left: 27px;
+        top: 250px;
+        
+    }
+
+    .point1{
+        margin-top: 175px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #544A0C;
+    }
+
+    .point1 img{
+        margin-right: 9px;
+        
+    }
+
+    #arr1{
+        padding-left: 180px;
+    }
+
+    .point2{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #544A0C;
+    }
+
+    .point2 img{
+        margin-right: 9px;
+        
+    }
+
+    #arr2{
+        padding-left: 120px;
+    }
+
+    .point3{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #544A0C;
+    }
+
+    .point3 img{
+        margin-right: 9px;
+        
+    }
+
+    #arr3{
+        padding-left: 197px;
+    }
+
+    .point4{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #544A0C;
+    }
+
+    .point4 img{
+        margin-right: 9px;
+        
+    }
+
+    #arr4{
+        padding-left: 135px;
+    }
+
+    .point5{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #544A0C;
+    }
+
+    .point5 img{
+        margin-right: 9px;
+        
+    }
+
+    #arr5{
+        padding-left: 202px;
+    }
+
+    .navbar{
+        display: grid;
+        background-color: #ebb478;
+        padding: 10px;
+        height: 70px;
+        grid-template-columns: auto auto auto auto;
+        border-radius: 30px 30px 0px 0px;
+    
+    }
+    
+    .navbar img{
+    
+    padding-left: 10px;
+    
+    }
+    
+    #mybook{
+    padding-left: 25px;
+    }
+    
+    .navbar p{
+    color: white;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 9px;
+    text-transform: uppercase;
+    
+    
+    }
+    
+    #home{
+    /* margin-left: px; */
+    margin-right: -8px;
+    }
+    .home-content{
+        margin-left: -10px;
+    }
+    
+    .nav-content{
+        justify-content: center;
+        text-align: center;
+        width: 60px;
+        /* padding-left: 7px; */
+    margin: 5px;
+    }
+    
+    .nav-content:hover{
+    background-color:#544a0c ;
+    border-radius: 30px 30px 0px 0px;
+    }
+    .img2{
+    margin-left: -8px;
+    }
+    .img3{
+    margin-left: -8px;
+    }
+    .img4{
+    margin-left: -8px;
+    }
+    
+    
+    
+    
+    
+
+  
+
+
+       
+</style>
+
+<body>
+    <div class="container-fluid" >
+        <div class="favicon-myprof">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <span id="sp1">Profile</span>
+        </div>
+
+     <div class="prof">
+         <img id="profileimg" src="img/profile.svg" alt="">
+         <img id="ico" src="img/proficon.svg" alt=""> 
+         
+     </div> 
+     
+     <div class="user-info">
+         <h2>Vendor</h2>
+         <h6>@gmail.com</h6>
+     </div>
+    <hr>
+
+    <div class="point1">
+        <img src="img/ico-1.svg" alt="">Edit Profile
+        <img id="arr1" src="img/arrow.svg" alt="">
+    </div>
+
+    <div class="point2">
+        <img src="img/ico-2.svg" alt="">Privacy and Policy
+        <img id="arr2" src="img/arrow.svg" alt="">
+    </div>
+
+    <div class="point3">
+        <img src="img/ico-3.svg" alt="">Security
+        <img id="arr3" src="img/arrow.svg" alt="">
+    </div>
+
+    <div class="point4">
+        <img src="img/ico-4.svg" alt="">My Transactions
+        <img id="arr4" src="img/arrow.svg" alt="">
+    </div>
+
+    <div class="point5">
+        <img src="img/ico-5.svg" alt="">Log Out
+        <img id="arr5" src="img/arrow.svg" alt="">
+    </div>
+    
+   
+   
+
+    <div class="fixed-bottom " >
+        <div class="navbar"> 
+            <div class="nav-content">
+               <img  class="img1 home-content" src="img/home.svg" alt="">
+               <p class="home-content" id="home">HOME</p>
+               
+            </div>
+            <div  class="nav-content">
+                <img class="img2" src="img/explore.svg" alt="">
+                <p>EXPLORE</p>
+            </div>
+            <div  class="nav-content">
+                <img class="img3" src="img/bookings.svg" alt="">
+                <p>BOOKINGS</p>
+            </div>
+            <div  class="nav-content">
+                <img class="img4" src="img/profile-small.svg" alt="">
+                <p>PROFILE</p>
+            </div>
+       
+        
+           
+            
+          </div>
+       
+    </div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+
+</body>
+</html>
+
+
+
+
